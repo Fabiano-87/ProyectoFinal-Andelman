@@ -59,3 +59,47 @@ body {
 .navbar-toggler-icon {
   display: none;
 }
+
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid white;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .social a {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: light-grey;
+  text-decoration: none;
+}
+
+footer ul li {
+  padding: 5px 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  @include flex-center(row, center, center);
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.list li {
+  display: inline;
+}
+
+.copyright {
+  margin-top: 20px;
+}

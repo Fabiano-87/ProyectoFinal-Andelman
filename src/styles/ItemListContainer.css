@@ -1,0 +1,197 @@
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: black;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.product-description {
+  padding: 20px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Set a consistent minimum size for cards */
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #000; /* Match the website background */
+  color: white;
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensures all cards stretch equally */
+}
+
+.product-card img {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  border-radius: 8px; /* Rounded corners */
+  display: block; /* Avoid any inline spacing issues */
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.product-card .product-description {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.product-card .cart-btn {
+  background-color: red; /* Match Add to Cart button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-card .cart-btn:hover {
+  background-color: #ff0000; /* Slightly brighter red on hover */
+}
+
+.product-detail {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-detail h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.product-detail p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 100%; /* Cada slide ocupa el 100% del ancho */
+  text-align: center;
+}
+
+.carousel-inner img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.details-link {
+  display: inline-block;
+  background-color: red; /* Button base color */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.details-link:hover {
+  background-color: #ff4d4d; /* Brighter red on hover */
+  transform: translateY(-2px); /* Lift effect */
+  text-decoration: none;
+}
+
+.image-container {
+  width: 100%;
+  height: 150px; /* Fixed height for consistent layout */
+  overflow: hidden; /* Hides overflow content to prevent distortion */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px; /* Matches the image */
+  background-color: #111; /* Optional: Adds a background in case images load slowly */
+}

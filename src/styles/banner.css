@@ -1,0 +1,23 @@
+.w-full {
+  width: 100%;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.object-center {
+  object-position: center;
+}

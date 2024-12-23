@@ -1,0 +1,286 @@
+body {
+  line-height: 1;
+  margin: 0;
+  background-color: hsl(0, 0%, 0%);
+  box-sizing: border-box;
+  font-family: "Rubik, sans-serif";
+  color: #ffffff;
+}
+
+main {
+  margin: 0 20px;
+}
+
+.image-container {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+.image-container .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+@media (max-width: 768px) {
+  .image-container {
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .image-container {
+    height: 150px;
+  }
+}
+
+.contact {
+  background: hsl(0, 0%, 0%);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.p-desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fcfcfc;
+  line-height: 24px;
+  width: 70%;
+  margin: 30px auto;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.about-pic {
+  width: 70%;
+  border-radius: 5px;
+}
+
+.prod-name {
+  text-align: center; /* Centers the text horizontally */
+  font-size: 2rem; /* Adjust font size as needed */
+  font-weight: bold; /* Makes the text bold */
+  margin-top: 20px; /* Optional: Adds space above the title */
+  color: white; /* Optional: Ensures the text color matches your design */
+}
+
+.mainpic {
+  width: 60%;
+  border-radius: 5px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.biohacking-text {
+  white-space: pre-line;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fcfcfc;
+  line-height: 24px;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.bio-body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto, sans-serif";
+}
+
+.container-3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Breadcrumb Styling */
+.breadcrumb-container {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.breadcrumb {
+  display: inline-flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+
+.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb li a:hover {
+  color: #ff4d4d;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  margin: 0 5px;
+  color: #666;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+/* Contact Section */
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-content {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.prod-name {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-label {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: red;
+}
+
+.form-textarea {
+  resize: none;
+}
+
+.form-submit-btn {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-submit-btn:hover {
+  background-color: #ff4d4d;
+  transform: translateY(-2px);
+}
+
+.faqs-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.prod-name {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.faqs-content {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left; /* Aligns text left for readability */
+}
+
+.faqs-image {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+}
+
+.faqs-description {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* About Section */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.prod-name {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left; /* Aligns text left for readability */
+}
+
+.about-image {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.6;
+  text-align: justify;
+}
