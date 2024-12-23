@@ -49,33 +49,30 @@ body {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(250px, 1fr)
-  ); /* Set a consistent minimum size for cards */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
 .product-card {
-  background-color: #000; /* Match the website background */
+  background-color: #000;
   color: white;
   padding: 15px;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%; /* Ensures all cards stretch equally */
+  height: 100%;
 }
 
 .product-card img {
-  width: 100%; /* Full width of the container */
-  height: 100%; /* Full height of the container */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
-  border-radius: 8px; /* Rounded corners */
-  display: block; /* Avoid any inline spacing issues */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
 }
 
 .product-card h2 {
@@ -89,7 +86,7 @@ body {
 }
 
 .product-card .cart-btn {
-  background-color: red; /* Match Add to Cart button */
+  background-color: red;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -99,7 +96,7 @@ body {
 }
 
 .product-card .cart-btn:hover {
-  background-color: #ff0000; /* Slightly brighter red on hover */
+  background-color: #ff0000;
 }
 
 .product-detail {
@@ -129,7 +126,7 @@ body {
 }
 
 .carousel-item {
-  flex: 0 0 100%; /* Cada slide ocupa el 100% del ancho */
+  flex: 0 0 100%;
   text-align: center;
 }
 
@@ -167,7 +164,7 @@ body {
 
 .details-link {
   display: inline-block;
-  background-color: red; /* Button base color */
+  background-color: red;
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -180,18 +177,18 @@ body {
 }
 
 .details-link:hover {
-  background-color: #ff4d4d; /* Brighter red on hover */
-  transform: translateY(-2px); /* Lift effect */
+  background-color: #ff4d4d;
+  transform: translateY(-2px);
   text-decoration: none;
 }
 
 .image-container {
   width: 100%;
-  height: 150px; /* Fixed height for consistent layout */
-  overflow: hidden; /* Hides overflow content to prevent distortion */
+  height: 150px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px; /* Matches the image */
-  background-color: #111; /* Optional: Adds a background in case images load slowly */
+  border-radius: 8px;
+  background-color: #111;
 }

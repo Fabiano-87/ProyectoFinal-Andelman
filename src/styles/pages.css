@@ -59,11 +59,11 @@ main {
 }
 
 .prod-name {
-  text-align: center; /* Centers the text horizontally */
-  font-size: 2rem; /* Adjust font size as needed */
-  font-weight: bold; /* Makes the text bold */
-  margin-top: 20px; /* Optional: Adds space above the title */
-  color: white; /* Optional: Ensures the text color matches your design */
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
 }
 
 .mainpic {
@@ -96,7 +96,6 @@ main {
   padding: 15px;
 }
 
-/* Breadcrumb Styling */
 .breadcrumb-container {
   margin: 20px auto;
   text-align: center;
@@ -129,7 +128,6 @@ main {
   content: "";
 }
 
-/* Contact Section */
 .contact-container {
   max-width: 800px;
   margin: 0 auto;
@@ -230,7 +228,7 @@ main {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: left; /* Aligns text left for readability */
+  text-align: left;
 }
 
 .faqs-image {
@@ -248,7 +246,6 @@ main {
   text-align: justify;
 }
 
-/* About Section */
 .about-container {
   max-width: 800px;
   margin: 0 auto;
@@ -267,7 +264,7 @@ main {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: left; /* Aligns text left for readability */
+  text-align: left;
 }
 
 .about-image {

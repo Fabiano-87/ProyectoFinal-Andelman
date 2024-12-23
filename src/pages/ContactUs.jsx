@@ -1,10 +1,9 @@
 import React from "react";
-import "../styles/pages.css"; // Assuming you have a global CSS file for shared styles
+import "../styles/pages.css";
 
 const ContactUs = () => {
   return (
     <main>
-      {/* Breadcrumbs */}
       <nav aria-label="breadcrumb" className="breadcrumb-container">
         <ul className="breadcrumb">
           <li>
@@ -13,8 +12,6 @@ const ContactUs = () => {
           <li>Contact Us</li>
         </ul>
       </nav>
-
-      {/* Contact Section */}
       <section className="contact-container">
         <div className="contact-content">
           <h1 className="prod-name">Contact Us</h1>

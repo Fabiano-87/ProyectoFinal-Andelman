@@ -4,7 +4,6 @@ import "../styles/pages.css";
 const About = () => {
   return (
     <main>
-      {/* Breadcrumbs */}
       <nav aria-label="breadcrumb" className="breadcrumb-container">
         <ul className="breadcrumb">
           <li>
@@ -13,8 +12,6 @@ const About = () => {
           <li>About Us</li>
         </ul>
       </nav>
-
-      {/* About Section */}
       <section className="about-container">
         <h1 className="prod-name">About Us</h1>
         <div className="about-content">
