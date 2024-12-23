@@ -3,6 +3,7 @@ export const products = [
     id: 1,
     nombre: "NeoRhythm",
     precio: 250,
+    category: "relax",
     images: [
       "/assets/img/neorhythm.jpg",
       "/assets/img/neorhythm2.jpg",
@@ -20,6 +21,7 @@ export const products = [
     id: 2,
     nombre: "Neurovizr",
     precio: 499,
+    category: "optimization",
     images: [
       "/assets/img/neurovizr1.jpg",
       "/assets/img/neurovizr2.jpg",
@@ -32,6 +34,7 @@ export const products = [
     id: 3,
     nombre: "Biohacker's Redlight Panel",
     precio: 396,
+    category: "optimization",
     images: [
       "/assets/img/redpanel.jpg",
       "/assets/img/redpanel2.jpg",
@@ -46,6 +49,7 @@ export const products = [
     id: 4,
     nombre: "Sensate 2",
     precio: 260,
+    category: "relax",
     images: [
       "/assets/img/sensate.png",
       "/assets/img/sensate2.png",
@@ -62,6 +66,7 @@ export const products = [
     id: 5,
     nombre: "Spotlight Therapy Device",
     precio: 89,
+    category: "optimization",
     images: ["/assets/img/spotlight.png"],
     descripcion:
       "Faster recovery and muscle pain relief? The unique red spotlight is now available in the Biohacker online store to energize your day and boost your recovery. With red light, you practically get improved circadian rhythms and deeper sleep rhythms.",
@@ -70,6 +75,7 @@ export const products = [
     id: 6,
     nombre: "QuietOn",
     precio: 214,
+    category: "others",
     images: ["/assets/img/quieton.png"],
     descripcion:
       "Have you ever noticed that despite their promises, the most advanced earplugs can't drown out snoring, street noise or noisy neighbors? These disturbances can be suppressed with only one medicine – the revolutionary QuietOn 3.1 sleep headphones.",
@@ -78,6 +84,7 @@ export const products = [
     id: 7,
     nombre: "Acetrack Ketone Meter",
     precio: 188,
+    category: "others",
     images: ["/assets/img/acetrack.png"],
     descripcion:
       "Monitoring ketosis is as easy as breathing. With a simple home measurement, you can monitor your metabolism and see immediately when your body is burning fat - and not. Use Acetrack anytime, anywhere. All you need is a mobile app and a pocket-friendly device, Acetrack is a portable breathalyzer that detects acetone in exhaled breath. Measure your ketogenic levels non-invasively and quickly with a simple exhale.",
@@ -86,6 +93,7 @@ export const products = [
     id: 8,
     nombre: "FlexBeam Recovery Device",
     precio: 499,
+    category: "optimization",
     images: ["/assets/img/flexbeam.png"],
     descripcion:
       "FlexBeam offers a targeted application of red and infrared light that works directly where it is needed and also produces important systemic effects on the whole body and accelerates recovery.",
@@ -94,6 +102,7 @@ export const products = [
     id: 9,
     nombre: "Elvy charger",
     precio: 64,
+    category: "others",
     images: ["/assets/img/elvy.png"],
     descripcion:
       "Elvy Charger is a unique mobile phone charger that allows you to achieve quality sleep by blocking up to 95% of the radiation coming towards you when charging at night.",
@@ -102,6 +111,7 @@ export const products = [
     id: 10,
     nombre: "Hypervibe G14 HOME V3",
     precio: 2799,
+    category: "optimization",
     images: ["/assets/img/hypervibe.png"],
     descripcion:
       "The power of this vibrating plate does not run out. Hypervibe is the secret weapon for more efficient brain function, bones and muscles. The vibration plate is a great tool for interval training. A minute on the device brings the same benefits as a 20-minute walk. Very effective bone and body strengthener. Also works on Android and Apple devices.",
@@ -110,6 +120,7 @@ export const products = [
     id: 11,
     nombre: "DoctorAir Exagun Hyper",
     precio: 89,
+    category: "relax",
     images: ["/assets/img/doctorair.png"],
     descripcion:
       "Discover the epitome of relaxation and well-being with DoctorAir Exagun Hyper, an innovation designed to redefine your self-care routine.",
@@ -118,6 +129,7 @@ export const products = [
     id: 12,
     nombre: "Portable Wooden Standing Desk",
     precio: 237,
+    category: "others",
     images: ["/assets/img/portable.jpg"],
     descripcion:
       "Turn any normal table into a standing table with a stylish Nordic design. Possibility to adjust to 8 different heights. Two different colored solutions can be assembled from the same parts. The material is wood. Very durable and high-quality construction.",

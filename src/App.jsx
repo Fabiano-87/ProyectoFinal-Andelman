@@ -6,7 +6,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
-import FAQs from "./pages/FAQs";
+import FAQs from "./pages/FAQS";
 import "./styles/banner.css";
 
 const App = () => {
