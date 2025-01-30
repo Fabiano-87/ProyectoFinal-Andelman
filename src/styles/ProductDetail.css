@@ -7,82 +7,68 @@ body {
   box-sizing: border-box;
 }
 
-.container-3 {
-  max-width: 1200px;
-  margin: 0 auto;
+.product-page {
+  text-align: center;
+  color: white;
   padding: 20px;
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.left-column {
-  flex: 1;
-}
-
-.right-column {
-  flex: 1;
-  padding-left: 20px;
-}
-
-.product-description h1 {
-  font-size: 2rem;
-  margin: 10px 0;
-  text-align: center;
-  color: #fff;
-}
-
-.product-description p {
-  font-size: 1rem;
-  color: #ccc;
-  line-height: 1.6;
-  text-align: justify;
-}
-
-.product-price span {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-}
-
-.product-description {
+.product-title {
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  border-bottom: 1px solid #666;
-  padding-bottom: 10px;
 }
 
-.product-price {
+.single-image-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  padding-top: 10px;
+  margin: 20px 0;
 }
 
-.cart-btn {
+.single-image {
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.add-to-cart-btn {
+  background-color: red;
+  color: white;
   padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #fff;
-  background-color: #e70000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
+  font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
-.cart-btn:hover {
-  background-color: #ff0000;
+.add-to-cart-btn:hover {
+  background-color: darkred;
 }
 
-.carousel {
-  max-width: 60%;
-  margin: 0 auto;
+.product-description {
+  font-size: 1rem;
+  margin: 20px auto;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px auto;
+  text-align: center;
+  display: block; /* Ensures the element behaves like a block for proper centering */
+}
+
+/* Carousel Styling */
+.carousel-container {
   position: relative;
+  width: 80%;
+  margin: 0 auto 20px auto;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .carousel-inner {
@@ -90,20 +76,14 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
+.carousel-image {
   flex: 0 0 100%;
-  text-align: center;
-}
-
-.carousel-item img {
   width: 100%;
-  max-height: 250px;
+  max-height: 300px;
   object-fit: contain;
-  border-radius: 8px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -113,38 +93,34 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
   z-index: 10;
 }
 
-.carousel-control-prev {
+.carousel-control.prev {
   left: 10px;
 }
 
-.carousel-control-next {
+.carousel-control.next {
   right: 10px;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
+.carousel-control:hover {
   background: rgba(255, 255, 255, 0.8);
   color: #000;
 }
 
-.container-desc {
-  margin-top: 30px;
-  font-size: 1rem;
-  color: #ccc;
-  line-height: 1.6;
-  text-align: justify;
+.single-image {
+  max-width: 50%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
 }
 
+/* Breadcrumb Styling */
 .breadcrumb-container {
   margin: 20px 0;
-  text-align: left;
+  text-align: center;
 }
 
 .breadcrumb {
@@ -174,14 +150,13 @@ body {
   content: "";
 }
 
+/* Dropdown Styling */
 .dropdown-container {
   position: relative;
   display: inline-block;
   margin: 20px auto;
-  text-align: center;
 }
 
-/* Botón principal del dropdown */
 .dropdown-btn {
   background-color: red;
   color: white;
@@ -197,7 +172,6 @@ body {
   background-color: #ff4d4d;
 }
 
-/* Contenido del dropdown */
 .dropdown-content {
   display: none;
   position: absolute;

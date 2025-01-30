@@ -1,8 +1,29 @@
 import React, { useState } from "react";
-import "../styles/ProductDetail.css";
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  if (!Array.isArray(images) || images.length === 0) {
+    return (
+      <div
+        style={{
+          textAlign: "center",
+          padding: "20px",
+          color: "white",
+        }}
+      >
+        <img
+          src={images || "/assets/img/no-image.png"}
+          alt="Product"
+          style={{
+            maxWidth: "100%",
+            maxHeight: "300px",
+            objectFit: "contain",
+          }}
+        />
+      </div>
+    );
+  }
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
@@ -17,9 +38,17 @@ const Carousel = ({ images }) => {
   };
 
   return (
-    <div className="carousel">
+    <div
+      style={{
+        width: "100%",
+        maxWidth: "600px",
+        margin: "20px auto",
+        position: "relative",
+        overflow: "hidden",
+        borderRadius: "10px",
+      }}
+    >
       <div
-        className="carousel-inner"
         style={{
           display: "flex",
           transform: `translateX(-${currentIndex * 100}%)`,
@@ -27,20 +56,53 @@ const Carousel = ({ images }) => {
         }}
       >
         {images.map((image, index) => (
-          <div
-            className="carousel-item"
+          <img
             key={index}
-            style={{ flex: "0 0 100%" }}
-          >
-            <img src={image} alt={`Slide ${index + 1}`} />
-          </div>
+            src={image}
+            alt={`Slide ${index}`}
+            style={{
+              flex: "0 0 100%",
+              width: "100%",
+              height: "auto",
+              objectFit: "contain",
+              maxHeight: "300px",
+            }}
+          />
         ))}
       </div>
-      <button className="carousel-control-prev" onClick={handlePrev}>
-        &#10094;
+      <button
+        onClick={handlePrev}
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "10px",
+          transform: "translateY(-50%)",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          color: "white",
+          border: "none",
+          padding: "10px",
+          borderRadius: "50%",
+          cursor: "pointer",
+        }}
+      >
+        ❮
       </button>
-      <button className="carousel-control-next" onClick={handleNext}>
-        &#10095;
+      <button
+        onClick={handleNext}
+        style={{
+          position: "absolute",
+          top: "50%",
+          right: "10px",
+          transform: "translateY(-50%)",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          color: "white",
+          border: "none",
+          padding: "10px",
+          borderRadius: "50%",
+          cursor: "pointer",
+        }}
+      >
+        ❯
       </button>
     </div>
   );

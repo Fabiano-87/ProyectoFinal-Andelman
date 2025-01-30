@@ -4,39 +4,55 @@ import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
-    <nav className="navbar">
-      <Link className="navbar-brand" to="/">
+    <nav
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        padding: "10px 20px",
+        backgroundColor: "black",
+      }}
+    >
+      <Link to="/">
         <img
-          className="logo"
-          src="/assets/img/logo.png"
+          src="https://firebasestorage.googleapis.com/v0/b/bioxcel-210e1.firebasestorage.app/o/logo.png?alt=media&token=225e9779-a738-4ca6-a3c0-6e581b3b3162" // Replace with the Firestore URL
           alt="logo"
-          width="120"
-          height="60"
+          style={{ width: "120px", height: "60px" }}
         />
       </Link>
-      <ul className="navbar-nav">
-        <li className="nav-item">
-          <Link to="/" className="nav-link">
+      <ul
+        style={{
+          listStyle: "none",
+          display: "flex",
+          gap: "15px",
+          margin: "0",
+          padding: "0",
+        }}
+      >
+        <li>
+          <Link to="/" style={{ color: "white", textDecoration: "none" }}>
             Home
           </Link>
         </li>
-        <li className="nav-item">
-          <Link to="/about" className="nav-link">
+        <li>
+          <Link to="/about" style={{ color: "white", textDecoration: "none" }}>
             About
           </Link>
         </li>
-        <li className="nav-item">
-          <Link to="/contact" className="nav-link">
+        <li>
+          <Link
+            to="/contact"
+            style={{ color: "white", textDecoration: "none" }}
+          >
             Contact Us
           </Link>
         </li>
-        <li className="nav-item">
-          <Link to="/" className="nav-link">
+        <li>
+          <Link to="/" style={{ color: "white", textDecoration: "none" }}>
             Products
           </Link>
         </li>
-        <li className="nav-item">
-          <Link to="/faqs" className="nav-link">
+        <li>
+          <Link to="/faqs" style={{ color: "white", textDecoration: "none" }}>
             FAQs
           </Link>
         </li>
