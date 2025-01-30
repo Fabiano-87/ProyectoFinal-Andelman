@@ -40,7 +40,6 @@ const CheckoutModal = ({ isOpen, onClose }) => {
     }
   };
 
-  // 🔴 Move this return statement **outside** of handleSubmit function
   if (!isOpen) return null;
 
   return (
@@ -168,5 +167,4 @@ const CheckoutModal = ({ isOpen, onClose }) => {
   );
 };
 
-// 🔴 FIXED: Removed the **extra** `export default` inside the function
 export default CheckoutModal;

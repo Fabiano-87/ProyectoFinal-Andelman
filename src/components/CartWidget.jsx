@@ -7,10 +7,7 @@ const CartWidget = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [isCheckoutOpen, setCheckoutOpen] = useState(false);
 
-  const totalItems = cart.reduce(
-    (sum, item) => sum + (item.quantity || 0), // Ensure default value of 0
-    0
-  );
+  const totalItems = cart.reduce((sum, item) => sum + (item.quantity || 0), 0);
 
   return (
     <div style={{ position: "relative" }}>
